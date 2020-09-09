@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#My first group project
+
+function myList(){
+for d  in */; do find "$d" | grep -q . && printf %s\\n "$d";
+done;
+}
+
+echo "$(myFunction)" > htmlFile.html
+firefox htmlFile.html
+
+echo "
+<html>
+<body>
+$(myFunction)
+</body>
+</html>"
