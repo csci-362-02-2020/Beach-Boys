@@ -3,16 +3,12 @@
 #My first group project
 
 function myList(){
-for d  in */; do find "$d" | grep -q . && printf %s\\n "$d";
+for d  in *; 
+do find "$d" | grep -q . && printf %s\\n "$d";
 done;
 }
 
+
+echo "$(myList)"
 echo "$(myList)" > htmlFile.html
 firefox htmlFile.html
-
-echo "
-<html>
-<body>
-$(myFunction)
-</body>
-</html>"
