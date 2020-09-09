@@ -1,16 +1,14 @@
+
 #!/bin/bash
 
 function myList(){
-for d in *; do find "$d" | grep -q . && printf %s\\n "$d";
-done
+echo > htmlFile.html
+for d  in *;
+do find "$d" | grep -v "htmlFile.html" | grep -q . && printf %s\\n "$d" && printf %s\\n "$d<br>">>htmlFile.html;
+done;
 }
 
-echo "
-<html>
-<body>
-$(myList)
-</body>
-</html>
-" > output.html
-
-firefox output.html
+echo "$(myList)"
+firefox htmlFile.html
+sleep 1
+rm htmlFile.html
