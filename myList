@@ -9,6 +9,6 @@ done;
 }
 
 echo "$(myList)"
-firefox htmlFile.html
+xdg-open htmlFile.html
 sleep 1
 rm htmlFile.html
