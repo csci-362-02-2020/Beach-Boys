@@ -3,5 +3,5 @@ Converts hex value to rgb
 ColorConverter
 hex2rgb()
 #0000FF
-0,0,255
+(0,0,255)
 // --END--
