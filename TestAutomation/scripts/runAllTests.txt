@@ -1,14 +1,14 @@
 #!/bin/bash
 
 #remove old .class files if any
-rm -f ../testCaseExecutables/*.class
+rm -f testCaseExecutables/*.class
 echo "Removed all .class files in the directory testCaseExecutables"
 
-javac ../testCaseExecutables/*.java
+javac testCaseExecutables/*.java
 echo "All files in testCaseExecutable has been compiled"
 
 declare -a arr
-for file in ../testCases/*.txt
+for file in testCases/*.txt
 do
  i=0;
  while read -r line
@@ -24,8 +24,8 @@ do
   declare input=${arr[4]}
   declare expected=${arr[5]}
 
- cd ..
- java testCaseExecutables.Drivers "$input"
+
+ java testCaseExecutables.Drivers "$input"<results.txt
 done
 
 
