@@ -2,5 +2,5 @@
 outputs saturation of color
 ColorConverter
 getSaturationDriver
-yellow
-1.0
+0xFFFF00
+1.00
