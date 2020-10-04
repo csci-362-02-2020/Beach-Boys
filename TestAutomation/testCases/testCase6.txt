@@ -3,4 +3,4 @@ outputs brightness of color
 ColorConverter
 getBrightnessDriver
 green
-50.0
+.5
