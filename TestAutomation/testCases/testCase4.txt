@@ -2,6 +2,6 @@
 Converts hex value to rgb
 ColorConverter
 hex2rgb()
-#000000
+0x000000
 java.awt.Color[r=0,g=0,b=0]
 // --END--
