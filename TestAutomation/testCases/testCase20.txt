@@ -2,5 +2,5 @@
 outputs hue of color
 ColorConverter
 getHueDriver
-purple
+0x800080
 .83
