@@ -3,4 +3,4 @@ outputs hue of color
 ColorConverter
 getHueDriver
 0x0000FF
-.66
+0.66
