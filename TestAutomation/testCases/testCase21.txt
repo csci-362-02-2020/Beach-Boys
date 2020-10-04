@@ -2,5 +2,5 @@
 outputs the hex from color given
 ColorConverter
 rgb2hexDriver
-blue
+0x0000FF
 #0000FF
