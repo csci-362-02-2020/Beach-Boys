@@ -1,5 +1,5 @@
 12
-outputs brightness of color
+outputs saturation of color
 ColorConverter
 getSaturationDriver
 0xFFFFFF
