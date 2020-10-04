@@ -1,0 +1,6 @@
+7
+outputs brightness of color
+ColorConverter
+getBrightnessDriver
+red
+100.0
