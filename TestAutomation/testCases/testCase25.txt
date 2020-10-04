@@ -1,0 +1,6 @@
+25
+outputs the hex from color given
+ColorConverter
+rgb2hexDriver
+purple
+#800080
