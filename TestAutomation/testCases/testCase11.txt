@@ -2,5 +2,5 @@
 outputs saturation of color
 ColorConverter
 getSaturationDriver
-black
-0.0
+0x000000
+0.00
