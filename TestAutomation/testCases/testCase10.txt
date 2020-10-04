@@ -2,5 +2,5 @@
 outputs brightness of color
 ColorConverter
 getBrightnessDriver
-purple
+0x800080
 .52
