@@ -2,5 +2,5 @@
 outputs brightness of color
 ColorConverter
 getBrightnessDriver
-black
-0.0
+0x000000
+0.00
