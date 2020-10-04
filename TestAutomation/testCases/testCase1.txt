@@ -1,0 +1,7 @@
+1
+Converts hex value to rgb
+ColorConverter
+hex2rgb()
+#FF0000
+255,0,0
+
