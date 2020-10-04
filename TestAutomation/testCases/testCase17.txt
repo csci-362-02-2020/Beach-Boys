@@ -3,4 +3,4 @@ outputs hue of color
 ColorConverter
 getHueDriver
 green
-120.0
+.33
