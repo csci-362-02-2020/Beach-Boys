@@ -6,6 +6,6 @@ public class getBrightnessDriver{
 	public static void main(String[] args){
 		
 		Color c = Color.decode(args[0]);
-		System.out.printf("%.2f", ColorConverter.getBrightness(c));
+		System.out.println(ColorConverter.getBrightness(c));
 	}
 }
