@@ -4,4 +4,4 @@ ColorConverter
 hex2rgbDriver
 FF0000
 java.awt.Color[r=255,g=0,b=0]
-
+hex2rgb(String hex)
