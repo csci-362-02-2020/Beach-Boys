@@ -4,3 +4,4 @@ ColorConverter
 rgb2hexDriver
 0xFF0000
 #FF0000
+rgb2hex(HEX color)
