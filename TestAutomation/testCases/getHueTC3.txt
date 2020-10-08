@@ -4,3 +4,4 @@ ColorConverter
 getHueDriver
 0x0000FF
 0.66
+getHue(HEX color)
