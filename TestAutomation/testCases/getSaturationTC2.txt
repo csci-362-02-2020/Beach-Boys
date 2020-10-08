@@ -4,4 +4,4 @@ ColorConverter
 getSaturationDriver
 0xFFFFFF
 0.00
-getSaturation(HEX color)
+getSaturation(Color color)
