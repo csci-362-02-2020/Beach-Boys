@@ -4,4 +4,5 @@ ColorConverter
 hex2rgbDriver
 0x000000
 null
-// --END--
+hex2rgb(String hex)
+
