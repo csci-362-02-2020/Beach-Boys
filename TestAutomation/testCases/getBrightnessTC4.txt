@@ -4,4 +4,4 @@ ColorConverter
 getBrightnessDriver
 0x000000
 0.00
-getBrightness(HEX color)
+getBrightness(Color color)
