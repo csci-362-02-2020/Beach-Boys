@@ -4,4 +4,5 @@ ColorConverter
 hex2rgbDriver
 800080
 java.awt.Color[r=128,g=0,b=128]
-// --END--
+hex2rgb(String hex)
+
