@@ -94,6 +94,6 @@ done
 
 echo \<\/table\> >> reports/results.html
 echo \</body\>\</html\> >> reports/results.html
-rm -f testCaseExecutables/*.class
-
 xdg-open  reports/results.html
+
+rm -f testCaseExecutables/*.class
