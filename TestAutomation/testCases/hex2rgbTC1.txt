@@ -3,4 +3,4 @@ Converts hex value to rgb
 ColorConverter
 hex2rgbDriver
 FF0000
-java.awt.Color[r=255,g=0,b=0]
+Red Value: 255 Green Value: 0 Blue Value: 0
