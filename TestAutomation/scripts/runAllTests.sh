@@ -2,10 +2,10 @@
 
 #remove old .class files if any
 rm -f testCaseExecutables/*.class
-echo "Removed all .class files in the directory testCaseExecutables"
+echo "Removed all old class files in directory: testCaseExecutables"
 
 javac testCaseExecutables/*.java
-echo "All files in testCaseExecutable has been compiled"
+echo "All drivers have been successfully compiled"
 
 declare -a arr
 
@@ -42,6 +42,7 @@ echo \<td\>"Expected Output"\<\/td\> >> reports/results.html
 echo \<td\>"Output"\<\/td\> >> reports/results.html
 echo \<td\>"Passed?"\<\/td\> >> reports/results.html
 echo \<\/tr\> >> reports/results.html
+echo "Executing Drivers"
 
 #Read in each file in the testCase directory
 for file in testCases/*.txt
@@ -101,6 +102,7 @@ done
 
 echo \<\/table\> >> reports/results.html
 echo \</body\>\</html\> >> reports/results.html
+echo "Opening results in browser..."
 xdg-open  reports/results.html
 
 rm -f testCaseExecutables/*.class

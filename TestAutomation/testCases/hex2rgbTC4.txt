@@ -2,5 +2,5 @@
 Converts hex value to rgb
 ColorConverter
 hex2rgbDriver
-000000
+0x000000
 Red Value: 0; Green Value: 0; Blue Value: 0
