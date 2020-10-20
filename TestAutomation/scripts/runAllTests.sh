@@ -88,14 +88,14 @@ do
    output=$(java testCaseExecutables.rgb2hexDriver "$input")
  fi
  echo \<td\>$output\<\/td\> >> reports/results.html
- 
+
  if [[ $output == $expected ]]
  then
    echo \<td\>"Passed"\<\/td\> >> reports/results.html
  else
    echo \<td\>"Failed"\<\/td\> >> reports/results.html
  fi
- 
+
   echo \<\/tr\> >> reports/results.html
 done
 
