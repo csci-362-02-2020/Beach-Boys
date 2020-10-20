@@ -3,4 +3,4 @@ Converts hex value to rgb
 ColorConverter
 hex2rgbDriver
 800080
-java.awt.Color[r=128,g=0,b=128]
+Red Value: 128 Green Value: 0 Blue Value: 128
