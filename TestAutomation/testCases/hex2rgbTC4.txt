@@ -2,5 +2,5 @@
 Converts hex value to rgb
 ColorConverter
 hex2rgbDriver
-0x000000
+000000
 java.awt.Color[r=0,g=0,b=0]
