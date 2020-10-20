@@ -3,4 +3,4 @@ Converts hex value to rgb
 ColorConverter
 hex2rgbDriver
 0000FF
-Red Value: 0 Green Value: 0 Blue Value: 255
+Red Value: 0; Green Value: 0; Blue Value: 255
