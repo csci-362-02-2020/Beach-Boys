@@ -4,4 +4,3 @@ ColorConverter
 getHueDriver
 0x800080
 0.83
-getHue(Color color)

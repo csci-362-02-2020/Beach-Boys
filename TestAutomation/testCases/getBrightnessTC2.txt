@@ -4,4 +4,3 @@ ColorConverter
 getBrightnessDriver
 0xFF0000
 1.00
-getBrightness(Color color)

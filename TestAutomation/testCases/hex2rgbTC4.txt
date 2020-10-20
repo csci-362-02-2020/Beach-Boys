@@ -3,6 +3,4 @@ Converts hex value to rgb
 ColorConverter
 hex2rgbDriver
 0x000000
-null
-hex2rgb(String hex)
-
+java.awt.Color[r=0,g=0,b=0]
