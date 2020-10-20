@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 #remove old .class files if any
@@ -89,7 +88,15 @@ do
    output=$(java testCaseExecutables.rgb2hexDriver "$input")
  fi
  echo \<td\>$output\<\/td\> >> reports/results.html
- echo \<\/tr\> >> reports/results.html
+ 
+ if [[ $output == $expected ]]
+ then
+   echo \<td\>"Passed"\<\/td\> >> reports/results.html
+ else
+   echo \<td\>"Failed"\<\/td\> >> reports/results.html
+ fi
+ 
+  echo \<\/tr\> >> reports/results.html
 done
 
 echo \<\/table\> >> reports/results.html
@@ -97,3 +104,4 @@ echo \</body\>\</html\> >> reports/results.html
 xdg-open  reports/results.html
 
 rm -f testCaseExecutables/*.class
+
