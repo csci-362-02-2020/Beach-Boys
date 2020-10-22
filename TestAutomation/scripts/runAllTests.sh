@@ -48,9 +48,13 @@ echo "Executing Drivers"
 for file in testCases/*.txt
 do
  i=0;
+ #Start new row in html table
  echo \<tr\> >> reports/results.html
+ 
+ #Read each line in the file in
  while read -r line
  do
+  #Print each line in the txt file to the html table
   echo \<td\>$line\<\/td\> >> reports/results.html
   arr[$i]="$line"
   i=$((i+1))
@@ -89,7 +93,8 @@ do
    output=$(java testCaseExecutables.rgb2hexDriver "$input")
  fi
  echo \<td\>$output\<\/td\> >> reports/results.html
-
+ 
+ #Check to see if test has passed
  if [[ $output == $expected ]]
  then
    echo \<td\>"Passed"\<\/td\> >> reports/results.html
@@ -103,7 +108,9 @@ done
 echo \<\/table\> >> reports/results.html
 echo \</body\>\</html\> >> reports/results.html
 echo "Opening results in browser..."
+
+#Open results in browser
 xdg-open  reports/results.html
 
+#Delete all .class files in testCaseExecutables directory
 rm -f testCaseExecutables/*.class
-
