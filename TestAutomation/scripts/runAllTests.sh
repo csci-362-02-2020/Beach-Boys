@@ -13,6 +13,29 @@ declare -a arr
 touch reports/results.html
 > reports/results.html
 
+touch temp/fileOrder.txt
+> temp/fileOrder.txt
+
+#Orders files so test case numbers are in order in webpage
+declare i=1
+declare firstLine
+declare numberOfFiles=$( ls testCases -1 | wc -l )
+numberOfFiles=$((numberOfFiles+1))
+
+while [ $i -lt $numberOfFiles ]
+do
+  for file in testCases/*.txt
+  do
+    firstLine=$( head -1 $file )
+    if [[ $firstLine == $i ]]
+    then 
+      echo $file >> temp/fileOrder.txt
+      break
+    fi
+  done
+  i=$((i+1))
+done
+
 echo \<html\>\<head\>\<style\> >> reports/results.html
 
 #Set up table border in html
@@ -45,9 +68,9 @@ echo \<\/tr\> >> reports/results.html
 echo "Executing Drivers"
 
 #Read in each file in the testCase directory
-for file in testCases/*.txt
+while read -r fileName
 do
- i=0;
+ i=0
  #Start new row in html table
  echo \<tr\> >> reports/results.html
  
@@ -58,7 +81,7 @@ do
   echo \<td\>$line\<\/td\> >> reports/results.html
   arr[$i]="$line"
   i=$((i+1))
- done < $file
+ done < $fileName
 
   declare testNum=${arr[0]}
   declare req=${arr[1]}
@@ -103,7 +126,7 @@ do
  fi
 
   echo \<\/tr\> >> reports/results.html
-done
+done < temp/fileOrder.txt
 
 echo \<\/table\> >> reports/results.html
 echo \</body\>\</html\> >> reports/results.html
@@ -114,3 +137,5 @@ xdg-open  reports/results.html
 
 #Delete all .class files in testCaseExecutables directory
 rm -f testCaseExecutables/*.class
+rm -f temp/fileOrder.txt
+
