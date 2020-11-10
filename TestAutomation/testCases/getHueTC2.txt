@@ -1,6 +1,7 @@
 17
 outputs hue of color
 ColorConverter
+getHue
 getHueDriver
 0x00FF00
 0.33
