@@ -1,6 +1,0 @@
-22
-outputs the hex from color given
-ColorConverter
-rgb2hex
-0x00FF00
-#00FF00
