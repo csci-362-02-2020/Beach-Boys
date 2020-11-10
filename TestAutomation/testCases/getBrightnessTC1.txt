@@ -1,6 +1,7 @@
 6
 outputs brightness of color
 ColorConverter
+getBrightness
 getBrightnessDriver
 0x00FF00
 1.00
