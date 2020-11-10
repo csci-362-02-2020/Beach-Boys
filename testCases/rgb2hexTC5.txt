@@ -1,0 +1,6 @@
+25
+outputs the hex from color given
+ColorConverter
+rgb2hex
+0x800080
+#800080

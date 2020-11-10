@@ -1,0 +1,6 @@
+6
+outputs brightness of color
+ColorConverter
+getBrightness
+0x00FF00
+1.00

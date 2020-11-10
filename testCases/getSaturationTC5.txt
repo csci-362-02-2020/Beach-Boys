@@ -1,0 +1,6 @@
+15
+outputs saturation of color
+ColorConverter
+getSaturation
+0x800080
+1.00

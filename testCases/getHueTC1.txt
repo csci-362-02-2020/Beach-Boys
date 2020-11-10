@@ -1,0 +1,6 @@
+16
+outputs hue of color
+ColorConverter
+getHue
+0xFF0000
+0.00

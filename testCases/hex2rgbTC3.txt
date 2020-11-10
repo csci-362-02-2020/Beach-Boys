@@ -1,0 +1,6 @@
+3
+Converts hex value to rgb
+ColorConverter
+hex2rgb
+0000FF
+Red Value: 0; Green Value: 0; Blue Value: 255
