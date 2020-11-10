@@ -1,6 +1,0 @@
-4
-Converts hex value to rgb
-ColorConverter
-hex2rgb
-0x000000
-Red Value: 0; Green Value: 0; Blue Value: 0
