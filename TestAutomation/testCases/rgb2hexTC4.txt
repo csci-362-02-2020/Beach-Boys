@@ -1,6 +1,7 @@
 24
 outputs the hex from color given
 ColorConverter
+rgb2hex
 rgb2hexDriver
 0x000000
 #000000
