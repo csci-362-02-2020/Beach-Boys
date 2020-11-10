@@ -2,6 +2,5 @@
 outputs hue of color
 ColorConverter
 getHue
-getHueDriver
 0x0000FF
 0.67

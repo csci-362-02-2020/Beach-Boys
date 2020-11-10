@@ -2,6 +2,5 @@
 Converts hex value to rgb
 ColorConverter
 hex2rgb
-hex2rgbDriver
 FF0000
 Red Value: 255; Green Value: 0; Blue Value: 0
