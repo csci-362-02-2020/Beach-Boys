@@ -69,6 +69,7 @@ echo "Executing Drivers"
 
 #Read in each file in the testCase directory
 while read -r fileName
+
 do
  i=0
  #Start new row in html table
@@ -79,8 +80,10 @@ do
  do
   #Print each line in the txt file to the html table
   echo \<td\>$line\<\/td\> >> reports/results.html
+  
   arr[$i]="$line"
   i=$((i+1))
+
  done < $fileName
 
   declare testNum=${arr[0]}
@@ -90,9 +93,10 @@ do
   declare input=${arr[4]}
   declare expected=${arr[5]}
   declare output
+  declare driver="Driver"
   
-   
- output=$(java testCaseExecutables.$method "$input")
+
+ output=$(java testCaseExecutables.$method$driver "$input")
  echo \<td\>$output\<\/td\> >> reports/results.html
  
  #Check to see if test has passed
