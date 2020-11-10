@@ -1,6 +1,7 @@
 14
 outputs saturation of color
 ColorConverter
+getSaturation
 getSaturationDriver
 0xFFFF00
 1.00
