@@ -1,6 +1,0 @@
-7
-outputs brightness of color
-ColorConverter
-getBrightness
-0xFF0000
-1.00
