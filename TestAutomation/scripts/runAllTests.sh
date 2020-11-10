@@ -91,30 +91,8 @@ do
   declare expected=${arr[5]}
   declare output
   
- if [[ $method == "hex2rgbDriver" ]]
- then
-   output=$(java testCaseExecutables.hex2rgbDriver "$input")
- fi
- 
- if [[ $method == "getBrightnessDriver" ]]
- then
-   output=$(java testCaseExecutables.getBrightnessDriver "$input")
- fi
-
- if [[ $method == "getSaturationDriver" ]]
- then
-   output=$(java testCaseExecutables.getSaturationDriver "$input")
- fi
-
- if [[ $method == "getHueDriver" ]]
- then
-   output=$(java testCaseExecutables.getHueDriver "$input")
- fi
-
- if [[ $method == "rgb2hexDriver" ]]
- then
-   output=$(java testCaseExecutables.rgb2hexDriver "$input")
- fi
+   
+ output=$(java testCaseExecutables.$method "$input")
  echo \<td\>$output\<\/td\> >> reports/results.html
  
  #Check to see if test has passed
