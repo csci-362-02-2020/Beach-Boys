@@ -1,6 +1,0 @@
-20
-outputs hue of color
-ColorConverter
-getHue
-0x800080
-0.83
