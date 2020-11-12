@@ -10,9 +10,11 @@ echo "All drivers have been successfully compiled"
 declare -a arr
 
 #Creates the html file and clears it if there is anything in it
+mkdir -p reports
 touch reports/results.html
 > reports/results.html
 
+mkdir -p temp
 touch temp/fileOrder.txt
 > temp/fileOrder.txt
 
@@ -95,7 +97,6 @@ do
   declare output
   declare driver="Driver"
   
-
  output=$(java testCaseExecutables.$method$driver "$input")
  echo \<td\>$output\<\/td\> >> reports/results.html
  
@@ -108,6 +109,8 @@ do
  fi
 
   echo \<\/tr\> >> reports/results.html
+  
+#End while
 done < temp/fileOrder.txt
 
 echo \<\/table\> >> reports/results.html
@@ -120,4 +123,3 @@ xdg-open  reports/results.html
 #Delete all .class files in testCaseExecutables directory
 rm -f testCaseExecutables/*.class
 rm -f temp/fileOrder.txt
-
