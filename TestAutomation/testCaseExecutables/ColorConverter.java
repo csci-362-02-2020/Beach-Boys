@@ -76,6 +76,7 @@ public final class ColorConverter {
         float[] hsbValues = new float[MAX_COMPONENT];
         Float brightness;
         Color.RGBtoHSB(color.getRed(), color.getGreen(), color.getBlue(), hsbValues);
+        //Color.RGBtoHSB(color.getRed(), color.getGreen(), color.getGreen(), hsbValues);
         brightness = hsbValues[BRIGHTNESS];
         return brightness;
     }
