@@ -105,6 +105,7 @@ public final class ColorConverter {
         Color.RGBtoHSB(color.getRed(), color.getGreen(), color.getBlue(), hsbValues);
         //Color.RGBtoHSB(color.getRed(), color.getRed(), color.getBlue(), hsbValues);
         hue = hsbValues[HUE];
+        //hue = hsbValues[1];
         return hue;
     }
 
