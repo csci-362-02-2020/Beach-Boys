@@ -102,6 +102,7 @@ public final class ColorConverter {
         float[] hsbValues = new float[MAX_COMPONENT];
         Float hue;
         Color.RGBtoHSB(color.getRed(), color.getGreen(), color.getBlue(), hsbValues);
+        //Color.RGBtoHSB(color.getRed(), color.getRed(), color.getBlue(), hsbValues);
         hue = hsbValues[HUE];
         return hue;
     }
