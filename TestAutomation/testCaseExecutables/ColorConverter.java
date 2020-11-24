@@ -103,7 +103,6 @@ public final class ColorConverter {
         float[] hsbValues = new float[MAX_COMPONENT];
         Float hue;
         Color.RGBtoHSB(color.getRed(), color.getGreen(), color.getBlue(), hsbValues);
-        //Color.RGBtoHSB(color.getRed(), color.getGreen(), color.getGreen(), hsbValues);
         hue = hsbValues[HUE];
         //hue = hsbValues[1];
         return hue;
@@ -127,6 +126,7 @@ public final class ColorConverter {
      * @return the RGB Color from hex Color
      */
     public static Color hex2Rgb(String colorStr) {
+        ///*
         if (colorStr.charAt(0) == '#') {
             String str = colorStr.substring(1);
             if (str.matches(HEXADECIMAL_DICTIONNARY)
@@ -136,7 +136,11 @@ public final class ColorConverter {
                     && str.length() == RGB_SHORT_HEXA_LENGTH) {
                 return getNewColorShortHexa(str);
             }
-        } else if (colorStr.matches(HEXADECIMAL_DICTIONNARY)) {
+        }
+        //*/
+        //Remove the two // before each block comment indicator in the above portion of the if statement and delete the "else" from the line below this in order
+        //to introduce a fault where the method no longer accepts inputs containing a # before the hexstring
+        else if (colorStr.matches(HEXADECIMAL_DICTIONNARY)) {
             if (colorStr.length() == RGB_HEXA_LENGTH) {
                 return getNewColor(colorStr);
             } else if (colorStr.length() == RGB_SHORT_HEXA_LENGTH) {
