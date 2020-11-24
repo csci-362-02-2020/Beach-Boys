@@ -131,6 +131,7 @@ public final class ColorConverter {
             String str = colorStr.substring(1);
             if (str.matches(HEXADECIMAL_DICTIONNARY)
                     && str.length() == RGB_HEXA_LENGTH) {
+                    //&& str.length() == 5) {
                 return getNewColor(str);
             } else if (str.matches(HEXADECIMAL_DICTIONNARY)
                     && str.length() == RGB_SHORT_HEXA_LENGTH) {
